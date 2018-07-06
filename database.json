@@ -1,0 +1,4 @@
+{"MRT":{"dialogchange":[], "permremove":[]},
+"5050":{"dialogchange":[], "permremove":[]}, 
+"maze":{"dialogchange":[], "permremove":[]}, 
+"Player":{"health":10, "skull": 0, "startingposx":400,"startingposy":1036, "money":100, "location":"5050", "maze":[]}}

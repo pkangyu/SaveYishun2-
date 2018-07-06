@@ -1,0 +1,170 @@
+{
+	"5050": [{
+			"code": "maze",
+			"name": "Cracks",
+			"msg": "You see cracks on the floor as floor tiles at a coffee shop started breaking apart for unknown reasons.
+Do you wish to break the curse ? ",
+			"choice": [true, "Yes", "No"]
+		},
+		{
+			"code": "Yes",
+			"name": "Watermelon",
+			"msg": "You entered the SPACE",
+			"choice": [false],
+			"action": {
+				"porting": 0,
+				"reqnotmet": "nocode"
+			}
+		},
+		{
+			"code": "No",
+			"name": "Watermelon",
+			"msg": "Fag off",
+			"choice": [false]
+		},
+		{
+			"code": ["northpt", "northpt1"],
+			"name": "NorthPoint",
+			"msg": "Aint got time to shop bro.",
+			"choice": [false]
+		},
+		{
+			"code": "nocode",
+			"name": "Watermelon",
+			"msg": "You are unqualified.",
+			"choice": [false]
+		}
+	],
+	"maze": [{
+			"code": "nocode",
+			"name": "CURSED AREA",
+			"msg": "You entered the SPACE",
+			"choice": [false]
+		},
+		{
+			"code": "out",
+			"name": "CURSED AREA",
+			"msg": "Wasted your time eh",
+			"choice": [true, "Yeah", "Fak u."]
+		},
+		{
+			"code": ["Fak u.", "Yeah"],
+			"name": "CURSED AREA",
+			"msg": "Wasted your time eh",
+			"choice": [false],
+			"action": {
+				"porting": "out"
+			}
+		}
+	],
+	"MRT": [{
+			"code": "station_lady",
+			"name": "Mysterious Station Lady",
+			"msg": "Why are you still here?!?! Get out of Yishun ASAP! Naked Siao Lang stopped the train!!!",
+			"choice": [true, "Why?", "Nevermind."]
+		},
+
+		{
+			"code": ["naked_man1", "naked_man2", "naked_man3", "naked_man4", "naked_man5"],
+			"name": "Naked Siao Lang",
+			"msg": "Ohhh Ouhhhh HeeHeeHee \n *Better get out before he go Havoccc*",
+			"choice": [false]
+		},
+		{
+			"code": "money",
+			"name": "SGD 50",
+			"msg": "*Should I pick it up?*",
+			"choice": [true, "Collect", "Don't Collect"]
+		},
+		{
+			"code": "Collect",
+			"name": "",
+			"msg": "You picked up the money",
+			"choice": [false],
+			"action": {
+				"changemoney": 10,
+				"permremove": ["money"]
+			}
+		},
+		{
+			"code": "Why?",
+			"name": "Mysterious Station Lady",
+			"msg": "Man Strips Butt-Naked and Plays with Genitals on Train. Commuters were greeted by an unwelcome sight of a man lying naked on the floor of a train ride from Jurong East to Woodlands on Dec 10, 2016. It is unclear what happened to him but several netizens suspect that he was high on alcohol or drugs.",
+			"choice": [false]
+		},
+		{
+			"code": "Nevermind.",
+			"name": "",
+			"msg": "You left wondering...",
+			"choice": [false]
+
+		},
+		{
+			"code": "Don't Collect",
+			"name": "",
+			"msg": "*You proceed onwards*",
+			"choice": [false]
+
+		},
+		{
+			"code": "dbs",
+			"name": "DBS Bank | Singapore",
+			"msg": "Go away you poor faggot!",
+			"choice": [false]
+		},
+		{
+			"code": "posb",
+			"name": "POSB Bank | Singapore",
+			"msg": "You look like you aren't rich enough. SHOOO",
+			"choice": [false]
+		},
+
+		{
+			"code": "toilet",
+			"name": "",
+			"msg": "You are too afraid to enter any toilet in Yishun.",
+			"choice": [false]
+		},
+		{
+			"code": "doorblock",
+			"name": "",
+			"msg": "You felt that you missed out on something...",
+			"choice": [false]
+		},
+		{
+			"code": "scanner",
+			"name": "",
+			"msg": "Damn. Your EZ-LINK card Bo Lui. Try your luck next time bro.",
+			"choice": [false]
+		},
+		{
+			"code": "ezlink",
+			"name": "EZ-LINK Card Top-up Machine",
+			"msg": "How would u like to pay?",
+			"choice": [true, "NETS", "CASH"]
+		},
+		{
+			"code": "CASH",
+			"name": "",
+			"msg": "You insert the MINIMUM 10 Bucks.",
+			"choice": [false],
+			"action": {
+				"changemoney": -10,
+				"reqnotmet": "loser",
+				"permremove": ["scanner", "doorblock"]
+			}
+		},
+		{
+			"code": "NETS",
+			"name": "EZ-LINK Card Top-up Machine",
+			"msg": "Fag Off. Your Card doesn't work",
+			"choice": [false]
+		},
+		{
+			"code": "loser",
+			"name": "EZ-LINK Card Top-up Machine",
+			"msg": "Loser. Go earn some money first.",
+			"choice": [false]
+		}
+	]
+}

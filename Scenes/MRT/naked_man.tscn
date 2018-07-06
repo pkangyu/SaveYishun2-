@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://img/naked_man/dick1.tex" type="Texture" id=1]
+[ext_resource path="res://img/naked_man/dick2.tex" type="Texture" id=2]
+
+[sub_resource type="SpriteFrames" id=47]
+
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "rest",
+"speed": 0.2
+} ]
+
+[node name="AnimatedSprite" type="AnimatedSprite"]
+
+transform/pos = Vector2( 330.964, 16.4654 )
+transform/rot = 5.00896e-06
+transform/scale = Vector2( 0.985965, 0.980701 )
+frames = SubResource( 47 )
+animation = "rest"
+frame = 1
+playing = true
+
+
